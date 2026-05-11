@@ -241,14 +241,14 @@
     },
     {
       "period": "Week of 11 May 2026",
-      "bofu_ca": 46,
-      "bofu_ca_avg4": 69,
+      "bofu_ca": 44,
+      "bofu_ca_avg4": 62,
       "mofu": 0,
       "tofu": 0,
       "competitors_bofu": [
         {
           "name": "Red Points",
-          "visibility": 46,
+          "visibility": 44,
           "owned": true
         },
         {
@@ -263,7 +263,7 @@
         },
         {
           "name": "MarqVision",
-          "visibility": 31,
+          "visibility": 33,
           "owned": false
         }
       ]
@@ -392,7 +392,7 @@
     {
       "period": "May 2026",
       "bofu_ca": 65,
-      "bofu_ca_avg4": 75,
+      "bofu_ca_avg4": 68,
       "mofu": 0,
       "tofu": 0,
       "competitors_bofu": [
@@ -422,27 +422,27 @@
   "themes": [
     {
       "name": "category-aware",
-      "visibility": 46,
+      "visibility": 44,
       "status": "close"
     },
     {
       "name": "global-enforcement",
-      "visibility": 57,
-      "status": "close"
+      "visibility": 24,
+      "status": "gap"
     },
     {
       "name": "manual-enforcement",
-      "visibility": 25,
+      "visibility": 19,
       "status": "gap"
     },
     {
       "name": "unauthorized-sellers",
-      "visibility": 18,
+      "visibility": 12,
       "status": "gap"
     },
     {
-      "name": "brand-impersonation",
-      "visibility": 0,
+      "name": "fake-products",
+      "visibility": 8,
       "status": "gap"
     }
   ],
