@@ -270,29 +270,29 @@
     },
     {
       "period": "Week of 18 May 2026",
-      "bofu_ca": 71,
-      "bofu_ca_avg4": 68,
+      "bofu_ca": 69,
+      "bofu_ca_avg4": 64,
       "mofu": 0,
       "tofu": 0,
       "competitors_bofu": [
         {
           "name": "Red Points",
-          "visibility": 71,
+          "visibility": 69,
           "owned": true
         },
         {
           "name": "BrandShield",
-          "visibility": 63,
+          "visibility": 64,
           "owned": false
         },
         {
           "name": "Corsearch",
-          "visibility": 46,
+          "visibility": 44,
           "owned": false
         },
         {
           "name": "MarqVision",
-          "visibility": 44,
+          "visibility": 40,
           "owned": false
         }
       ]
@@ -421,7 +421,7 @@
     {
       "period": "May 2026",
       "bofu_ca": 75,
-      "bofu_ca_avg4": 72,
+      "bofu_ca_avg4": 75,
       "mofu": 0,
       "tofu": 0,
       "competitors_bofu": [
@@ -437,7 +437,7 @@
         },
         {
           "name": "Corsearch",
-          "visibility": 49,
+          "visibility": 48,
           "owned": false
         },
         {
@@ -451,17 +451,17 @@
   "themes": [
     {
       "name": "category-aware",
-      "visibility": 71,
+      "visibility": 69,
       "status": "leading"
     },
     {
       "name": "global-enforcement",
-      "visibility": 47,
+      "visibility": 45,
       "status": "close"
     },
     {
       "name": "manual-enforcement",
-      "visibility": 56,
+      "visibility": 54,
       "status": "close"
     },
     {
