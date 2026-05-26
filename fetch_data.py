@@ -82,6 +82,14 @@ def get_visibility_by_tag(tag, start_date, end_date, top_n=10):
     r.raise_for_status()
     data = r.json()
     aggregates = data.get("data", {}).get("aggregates", [])
+  print(f"\nTAG DEBUG — {tag}")
+print(f"Returned aggregates: {len(aggregates)}")
+for a in aggregates[:10]:
+    print(
+        a.get("brand"),
+        a.get("relationship"),
+        round(a.get("visibility", 0) * 100)
+    )
     rp = next((a for a in aggregates if a.get("relationship") == "owned"), None)
     return round(rp["visibility"] * 100) if rp else None
 
