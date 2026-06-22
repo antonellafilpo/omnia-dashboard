@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15",
+  "lastUpdated": "2026-06-22",
   "weekly": [
     {
       "period": "17 Mar 2026",
@@ -412,6 +412,35 @@
           "owned": false
         }
       ]
+    },
+    {
+      "period": "Week of 22 Jun 2026",
+      "bofu_ca": 91,
+      "bofu_ca_avg4": 86,
+      "mofu": 0,
+      "tofu": 0,
+      "competitors_bofu": [
+        {
+          "name": "Red Points",
+          "visibility": 91,
+          "owned": true
+        },
+        {
+          "name": "BrandShield",
+          "visibility": 60,
+          "owned": false
+        },
+        {
+          "name": "Corsearch",
+          "visibility": 64,
+          "owned": false
+        },
+        {
+          "name": "MarqVision",
+          "visibility": 24,
+          "owned": false
+        }
+      ]
     }
   ],
   "monthly": [
@@ -565,19 +594,19 @@
     },
     {
       "period": "Jun 2026",
-      "bofu_ca": 89,
+      "bofu_ca": 90,
       "bofu_ca_avg4": 88,
       "mofu": 0,
       "tofu": 0,
       "competitors_bofu": [
         {
           "name": "Red Points",
-          "visibility": 89,
+          "visibility": 90,
           "owned": true
         },
         {
           "name": "BrandShield",
-          "visibility": 61,
+          "visibility": 63,
           "owned": false
         },
         {
@@ -596,33 +625,33 @@
   "themes": [
     {
       "name": "category-aware",
-      "visibility": 85,
+      "visibility": 91,
       "status": "leading"
     },
     {
       "name": "global-enforcement",
-      "visibility": 74,
+      "visibility": 64,
       "status": "leading"
     },
     {
       "name": "manual-enforcement",
-      "visibility": 71,
-      "status": "leading"
-    },
-    {
-      "name": "unauthorized-sellers",
-      "visibility": 31,
+      "visibility": 53,
       "status": "close"
     },
     {
+      "name": "unauthorized-sellers",
+      "visibility": 29,
+      "status": "gap"
+    },
+    {
       "name": "fake-products",
-      "visibility": 43,
+      "visibility": 33,
       "status": "close"
     },
     {
       "name": "brand-impersonation",
-      "visibility": 43,
-      "status": "close"
+      "visibility": 20,
+      "status": "gap"
     }
   ],
   "category_aware_prompts": [
