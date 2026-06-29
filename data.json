@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22",
+  "lastUpdated": "2026-06-29",
   "weekly": [
     {
       "period": "17 Mar 2026",
@@ -441,6 +441,35 @@
           "owned": false
         }
       ]
+    },
+    {
+      "period": "Week of 29 Jun 2026",
+      "bofu_ca": 89,
+      "bofu_ca_avg4": 90,
+      "mofu": 0,
+      "tofu": 0,
+      "competitors_bofu": [
+        {
+          "name": "Red Points",
+          "visibility": 89,
+          "owned": true
+        },
+        {
+          "name": "BrandShield",
+          "visibility": 76,
+          "owned": false
+        },
+        {
+          "name": "Corsearch",
+          "visibility": 62,
+          "owned": false
+        },
+        {
+          "name": "MarqVision",
+          "visibility": 47,
+          "owned": false
+        }
+      ]
     }
   ],
   "monthly": [
@@ -606,7 +635,7 @@
         },
         {
           "name": "BrandShield",
-          "visibility": 63,
+          "visibility": 64,
           "owned": false
         },
         {
@@ -625,32 +654,32 @@
   "themes": [
     {
       "name": "category-aware",
-      "visibility": 91,
+      "visibility": 89,
       "status": "leading"
     },
     {
       "name": "global-enforcement",
-      "visibility": 64,
-      "status": "leading"
-    },
-    {
-      "name": "manual-enforcement",
-      "visibility": 53,
+      "visibility": 45,
       "status": "close"
     },
     {
+      "name": "manual-enforcement",
+      "visibility": 66,
+      "status": "leading"
+    },
+    {
       "name": "unauthorized-sellers",
-      "visibility": 29,
+      "visibility": 24,
       "status": "gap"
     },
     {
       "name": "fake-products",
-      "visibility": 33,
+      "visibility": 32,
       "status": "close"
     },
     {
       "name": "brand-impersonation",
-      "visibility": 20,
+      "visibility": 17,
       "status": "gap"
     }
   ],
