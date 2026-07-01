@@ -122,7 +122,13 @@ def get_visibility_by_tag(tag, start_date, end_date, top_n=10):
     rp = next((a for a in aggregates if a.get("relationship") == "owned"), None)
     return round(rp["visibility"] * 100) if rp and rp.get("visibility") is not None else None
 
-def get_prompt_visibility(prompt_id, start_date, end_date, top_n=3):
+def get_prompt_visibility(prompt_id, start_date, end_date, top_n=5):
+    # NOTE: Omnia's API requires pageSize >= 5. The original script passed
+    # top_n=3 here, which is BELOW that minimum and returns 400 Bad Request
+    # every time. It was silently swallowed by a try/except in main(), so
+    # this per-prompt detail refresh has likely been failing every week
+    # without anyone noticing. Fixed by raising the default to 5 and
+    # trimming to 3 for display at the call site instead.
     """Top entities mentioned for a specific prompt, within a date window."""
     data = _get(f"/api/v1/prompts/{prompt_id}/visibility/aggregates", {
         "startDate": start_date, "endDate": end_date,
@@ -385,7 +391,7 @@ def main():
                 for i, c in enumerate(sorted(
                     _get(f"/api/v1/brands/{BRAND_ID}/citations/aggregates", {
                         "tags": "category-aware", "startDate": w_start, "endDate": w_end,
-                        "sortBy": "total_citations", "sortDirection": "desc", "pageSize": 4,
+                        "sortBy": "total_citations", "sortDirection": "desc", "pageSize": 10,
                     }).get("data", {}).get("aggregates", []),
                     key=lambda x: x.get("totalCitations", 0), reverse=True
                 )[:4])
