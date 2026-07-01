@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29",
+  "lastUpdated": "2026-07-01",
   "weekly": [
     {
       "period": "17 Mar 2026",
@@ -445,9 +445,10 @@
     {
       "period": "Week of 29 Jun 2026",
       "bofu_ca": 89,
-      "bofu_ca_avg4": 90,
-      "mofu": 0,
-      "tofu": 0,
+      "bofu_ca_avg4": 88,
+      "mofu": 47,
+      "tofu": 2,
+      "bofu_overall": 100,
       "competitors_bofu": [
         {
           "name": "Red Points",
@@ -456,17 +457,17 @@
         },
         {
           "name": "BrandShield",
-          "visibility": 76,
+          "visibility": 68,
           "owned": false
         },
         {
           "name": "Corsearch",
-          "visibility": 62,
+          "visibility": 59,
           "owned": false
         },
         {
           "name": "MarqVision",
-          "visibility": 47,
+          "visibility": 44,
           "owned": false
         }
       ]
@@ -649,6 +650,36 @@
           "owned": false
         }
       ]
+    },
+    {
+      "period": "Jul 2026",
+      "bofu_ca": 95,
+      "bofu_ca_avg4": 90,
+      "mofu": 43,
+      "tofu": 6,
+      "bofu_overall": 100,
+      "competitors_bofu": [
+        {
+          "name": "Red Points",
+          "visibility": 95,
+          "owned": true
+        },
+        {
+          "name": "BrandShield",
+          "visibility": 68,
+          "owned": false
+        },
+        {
+          "name": "Corsearch",
+          "visibility": 68,
+          "owned": false
+        },
+        {
+          "name": "MarqVision",
+          "visibility": 27,
+          "owned": false
+        }
+      ]
     }
   ],
   "themes": [
@@ -659,27 +690,27 @@
     },
     {
       "name": "global-enforcement",
-      "visibility": 45,
+      "visibility": 48,
       "status": "close"
     },
     {
       "name": "manual-enforcement",
-      "visibility": 66,
+      "visibility": 67,
       "status": "leading"
     },
     {
       "name": "unauthorized-sellers",
-      "visibility": 24,
+      "visibility": 27,
       "status": "gap"
     },
     {
       "name": "fake-products",
-      "visibility": 32,
+      "visibility": 39,
       "status": "close"
     },
     {
       "name": "brand-impersonation",
-      "visibility": 17,
+      "visibility": 18,
       "status": "gap"
     }
   ],
@@ -688,21 +719,21 @@
       "text": "Which brand protection platforms offer flat-fee pricing with unlimited takedowns?",
       "modifier": "narrative-grounding",
       "rp_rank": 1,
-      "rp_visibility": 93,
+      "rp_visibility": 100,
       "top_mentions": [
         {
           "name": "Red Points",
-          "visibility": 93,
+          "visibility": 100,
           "owned": true
         },
         {
           "name": "BrandShield",
-          "visibility": 80,
+          "visibility": 92,
           "owned": false
         },
         {
-          "name": "BrandProtection.ai",
-          "visibility": 53,
+          "name": "Corsearch",
+          "visibility": 75,
           "owned": false
         }
       ]
@@ -711,21 +742,21 @@
       "text": "Which brand protection software offers unlimited takedowns at a flat fee?",
       "modifier": "narrative-grounding",
       "rp_rank": 1,
-      "rp_visibility": 97,
+      "rp_visibility": 100,
       "top_mentions": [
         {
           "name": "Red Points",
-          "visibility": 97,
+          "visibility": 100,
           "owned": true
         },
         {
-          "name": "BrandShield",
-          "visibility": 65,
+          "name": "Smart Protection",
+          "visibility": 50,
           "owned": false
         },
         {
-          "name": "ZeroFox",
-          "visibility": 34,
+          "name": "BrandShield",
+          "visibility": 42,
           "owned": false
         }
       ]
@@ -734,21 +765,21 @@
       "text": "Which brand protection platforms offer unlimited enforcement?",
       "modifier": "narrative-grounding",
       "rp_rank": 1,
-      "rp_visibility": 88,
+      "rp_visibility": 100,
       "top_mentions": [
         {
           "name": "Red Points",
-          "visibility": 88,
+          "visibility": 100,
           "owned": true
         },
         {
           "name": "BrandShield",
-          "visibility": 87,
+          "visibility": 50,
           "owned": false
         },
         {
           "name": "MarqVision",
-          "visibility": 42,
+          "visibility": 50,
           "owned": false
         }
       ]
@@ -757,21 +788,21 @@
       "text": "Which brand protection platforms use smart rules to automate detection and enforcement?",
       "modifier": null,
       "rp_rank": 1,
-      "rp_visibility": 82,
+      "rp_visibility": 92,
       "top_mentions": [
         {
           "name": "Red Points",
-          "visibility": 82,
+          "visibility": 92,
           "owned": true
         },
         {
           "name": "MarqVision",
-          "visibility": 81,
+          "visibility": 67,
           "owned": false
         },
         {
-          "name": "BrandShield",
-          "visibility": 74,
+          "name": "Tracer",
+          "visibility": 58,
           "owned": false
         }
       ]
@@ -780,21 +811,21 @@
       "text": "Which brand protection platforms use predictive analytics for enforcement and risk prioritization?",
       "modifier": null,
       "rp_rank": 1,
-      "rp_visibility": 75,
+      "rp_visibility": 92,
       "top_mentions": [
         {
           "name": "Red Points",
-          "visibility": 75,
+          "visibility": 92,
           "owned": true
         },
         {
-          "name": "MarqVision",
-          "visibility": 74,
+          "name": "BrandShield",
+          "visibility": 67,
           "owned": false
         },
         {
-          "name": "BrandShield",
-          "visibility": 64,
+          "name": "Corsearch",
+          "visibility": 58,
           "owned": false
         }
       ]
@@ -803,21 +834,21 @@
       "text": "Which brand protection platforms offer a fully managed service model rather than self-serve?",
       "modifier": null,
       "rp_rank": 1,
-      "rp_visibility": 66,
+      "rp_visibility": 100,
       "top_mentions": [
         {
           "name": "Red Points",
-          "visibility": 66,
+          "visibility": 100,
           "owned": true
         },
         {
-          "name": "BrandShield",
-          "visibility": 66,
+          "name": "Corsearch",
+          "visibility": 100,
           "owned": false
         },
         {
-          "name": "Corsearch",
-          "visibility": 59,
+          "name": "BrandShield",
+          "visibility": 67,
           "owned": false
         }
       ]
@@ -826,21 +857,21 @@
       "text": "Which brand protection platforms offer zero-cost litigation and revenue recovery programs?",
       "modifier": "narrative-grounding",
       "rp_rank": 2,
-      "rp_visibility": 73,
+      "rp_visibility": 62,
       "top_mentions": [
         {
           "name": "Corsearch",
-          "visibility": 83,
+          "visibility": 75,
           "owned": false
         },
         {
           "name": "Red Points",
-          "visibility": 73,
+          "visibility": 62,
           "owned": true
         },
         {
-          "name": "MarqVision",
-          "visibility": 46,
+          "name": "IProtect Global",
+          "visibility": 50,
           "owned": false
         }
       ]
@@ -848,22 +879,22 @@
     {
       "text": "What is the best brand protection software for enterprise-level companies?",
       "modifier": "icp-specific",
-      "rp_rank": 2,
-      "rp_visibility": 91,
+      "rp_rank": 1,
+      "rp_visibility": 100,
       "top_mentions": [
         {
-          "name": "BrandShield",
-          "visibility": 96,
-          "owned": false
-        },
-        {
           "name": "Red Points",
-          "visibility": 91,
+          "visibility": 100,
           "owned": true
         },
         {
           "name": "Corsearch",
-          "visibility": 90,
+          "visibility": 100,
+          "owned": false
+        },
+        {
+          "name": "BrandShield",
+          "visibility": 92,
           "owned": false
         }
       ]
@@ -871,22 +902,22 @@
     {
       "text": "What brand protection platforms provide coverage across marketplaces, social media, websites, and ads?",
       "modifier": null,
-      "rp_rank": 2,
-      "rp_visibility": 71,
+      "rp_rank": 1,
+      "rp_visibility": 100,
       "top_mentions": [
         {
-          "name": "BrandShield",
-          "visibility": 96,
-          "owned": false
-        },
-        {
           "name": "Red Points",
-          "visibility": 71,
+          "visibility": 100,
           "owned": true
         },
         {
-          "name": "ZeroFox",
-          "visibility": 66,
+          "name": "BrandShield",
+          "visibility": 100,
+          "owned": false
+        },
+        {
+          "name": "Corsearch",
+          "visibility": 50,
           "owned": false
         }
       ]
@@ -895,21 +926,21 @@
       "text": "Which brand protection software is best for stopping gray market and parallel imports?",
       "modifier": null,
       "rp_rank": 2,
-      "rp_visibility": 81,
+      "rp_visibility": 83,
       "top_mentions": [
         {
           "name": "Corsearch",
-          "visibility": 88,
+          "visibility": 100,
           "owned": false
         },
         {
           "name": "Red Points",
-          "visibility": 81,
+          "visibility": 83,
           "owned": true
         },
         {
-          "name": "BrandShield",
-          "visibility": 68,
+          "name": "MarqVision",
+          "visibility": 67,
           "owned": false
         }
       ]
@@ -917,22 +948,22 @@
     {
       "text": "Which brand protection platforms offer API integrations with marketplaces and ecommerce systems?",
       "modifier": null,
-      "rp_rank": 2,
-      "rp_visibility": 85,
+      "rp_rank": 1,
+      "rp_visibility": 100,
       "top_mentions": [
         {
-          "name": "BrandShield",
-          "visibility": 95,
-          "owned": false
-        },
-        {
           "name": "Red Points",
-          "visibility": 85,
+          "visibility": 100,
           "owned": true
         },
         {
-          "name": "Amazon",
-          "visibility": 76,
+          "name": "BrandShield",
+          "visibility": 62,
+          "owned": false
+        },
+        {
+          "name": "Corsearch",
+          "visibility": 62,
           "owned": false
         }
       ]
@@ -940,82 +971,82 @@
     {
       "text": "Which brand protection solution covers the most channels?",
       "modifier": null,
-      "rp_rank": 3,
-      "rp_visibility": 63,
+      "rp_rank": 2,
+      "rp_visibility": 92,
       "top_mentions": [
         {
           "name": "BrandShield",
-          "visibility": 96,
-          "owned": false
-        },
-        {
-          "name": "ZeroFox",
-          "visibility": 81,
+          "visibility": 100,
           "owned": false
         },
         {
           "name": "Red Points",
-          "visibility": 63,
+          "visibility": 92,
           "owned": true
+        },
+        {
+          "name": "ZeroFox",
+          "visibility": 83,
+          "owned": false
         }
       ]
     },
     {
       "text": "Which brand protection platforms train their AI models on large proprietary datasets?",
       "modifier": "narrative-grounding",
-      "rp_rank": 4,
-      "rp_visibility": 50,
+      "rp_rank": 1,
+      "rp_visibility": 100,
       "top_mentions": [
         {
-          "name": "ZeroFox",
+          "name": "Red Points",
+          "visibility": 100,
+          "owned": true
+        },
+        {
+          "name": "Corsearch",
           "visibility": 75,
           "owned": false
         },
         {
           "name": "BrandShield",
-          "visibility": 67,
+          "visibility": 58,
           "owned": false
-        },
-        {
-          "name": "Red Points",
-          "visibility": 50,
-          "owned": true
         }
       ]
     },
     {
       "text": "What are the benefits of using AI-driven solutions for online brand protection?",
       "modifier": null,
-      "rp_rank": 5,
-      "rp_visibility": 17,
+      "rp_rank": null,
+      "rp_visibility": null,
       "top_mentions": [
         {
+          "name": "Alibaba",
+          "visibility": 50,
+          "owned": false
+        },
+        {
+          "name": "Amazon",
+          "visibility": 50,
+          "owned": false
+        },
+        {
           "name": "BrandShield",
-          "visibility": 44,
+          "visibility": 50,
           "owned": false
-        },
-        {
-          "name": "ZeroFox",
-          "visibility": 32,
-          "owned": false
-        },
-        {
-          "name": "Red Points",
-          "visibility": 17,
-          "owned": true
         }
       ]
     },
     {
       "text": "Which AI-powered platforms help verify product authenticity and detect counterfeits online?",
       "modifier": null,
-      "rp_rank": null,
-      "rp_visibility": null,
+      "rp_rank": 1,
+      "rp_visibility": 62,
       "top_mentions": [
         {
-          "name": "VISUA",
-          "visibility": 67,
-          "owned": false
+          "name": "Red Points",
+          "visibility": 62,
+          "owned": true
         },
         {
           "name": "Entrupy",
@@ -1023,8 +1054,8 @@
           "owned": false
         },
         {
-          "name": "TrueMed",
-          "visibility": 61,
+          "name": "BrandShield",
+          "visibility": 50,
           "owned": false
         }
       ]
@@ -1032,22 +1063,22 @@
     {
       "text": "Which brand protection platforms have the fastest takedown times?",
       "modifier": null,
-      "rp_rank": null,
-      "rp_visibility": null,
+      "rp_rank": 2,
+      "rp_visibility": 75,
       "top_mentions": [
         {
           "name": "Netcraft",
-          "visibility": 87,
+          "visibility": 83,
           "owned": false
         },
         {
-          "name": "PhishFort",
-          "visibility": 73,
-          "owned": false
+          "name": "Red Points",
+          "visibility": 75,
+          "owned": true
         },
         {
-          "name": "Bolster",
-          "visibility": 53,
+          "name": "BrandShield",
+          "visibility": 67,
           "owned": false
         }
       ]
@@ -1243,77 +1274,127 @@
   "citation_sources": {
     "bofu_ca": {
       "label": "BOFU category-aware",
-      "subtitle": "Neutral queries only \u00b7 BrandShield leads 75%",
+      "subtitle": "Red Points leads 89%",
       "stage": "ca",
       "sources": [
         {
           "rank": 1,
-          "title": "10 best brand protection tools reviewed (2026)",
-          "url": "https://www.marqvision.com/blog/brand-protection-tools",
-          "domain": "marqvision.com"
+          "title": "Top Brand Protection Software of 2026 - Podqi Insights",
+          "url": "https://podqi.com/blog/top-brand-protection-software-ranked",
+          "domain": "podqi.com"
         },
         {
           "rank": 2,
-          "title": "Best online brand protection tools 2026: ranked & compared",
+          "title": "8 Best Online Brand Protection Tools [2026] Ranked & Compared",
           "url": "https://www.brandshield.com/blog/best-online-brand-protection-tools",
           "domain": "brandshield.com"
         },
         {
           "rank": 3,
-          "title": "6 best brand protection platforms for 2026",
-          "url": "https://www.netcraft.com/blog/6-best-brand-protection-platforms-for-defending-your-company-s-online-reputation",
-          "domain": "netcraft.com"
+          "title": "Blog | 10 Best Brand Protection Tools Reviewed (2026 Updated List)",
+          "url": "https://www.marqvision.com/blog/brand-protection-tools",
+          "domain": "marqvision.com"
         },
         {
           "rank": 4,
-          "title": "The 6 best online brand protection software tools by category",
-          "url": "https://www.brandverity.com/blog/best-online-brand-protection-software-tools",
-          "domain": "brandverity.com"
+          "title": "9 best brand protection software for 2026 - Guideflow Blog",
+          "url": "https://www.guideflow.com/blog/brand-protection-software",
+          "domain": "guideflow.com"
         }
       ]
     },
     "bofu_overall": {
       "label": "BOFU overall",
-      "subtitle": "Includes competitive + branded-direct prompts",
+      "subtitle": "Includes competitive + branded-direct",
       "stage": "bofu",
       "sources": [
         {
           "rank": 1,
-          "title": "Red Points reviews & ratings 2026",
-          "url": "https://www.gartner.com/reviews/product/red-points",
-          "domain": "gartner.com"
-        },
-        {
-          "rank": 2,
-          "title": "BrandShield vs Red Points: best brand protection platform",
+          "title": "BrandShield vs Red Points (2026): Which Should You Choose?",
           "url": "https://www.brandshield.com/blog/brandshield-vs-red-points",
           "domain": "brandshield.com"
         },
         {
-          "rank": 3,
-          "title": "Red Points reviews 2026: details, pricing & features",
+          "rank": 2,
+          "title": "Red Points Reviews 2026: Details, Pricing, & Features - G2",
           "url": "https://www.g2.com/products/red-points/reviews",
           "domain": "g2.com"
         },
         {
+          "rank": 3,
+          "title": "Red Points Reviews | Read Customer Service Reviews of redpoints.com",
+          "url": "https://www.trustpilot.com/review/redpoints.com",
+          "domain": "trustpilot.com"
+        },
+        {
           "rank": 4,
-          "title": "Red Points reviews 2026 \u2014 Capterra",
-          "url": "https://www.capterra.com/p/178310/Red-Points/reviews",
-          "domain": "capterra.com"
+          "title": "Red Points Reviews & Ratings 2026 | Gartner Peer Insights",
+          "url": "https://www.gartner.com/reviews/product/red-points",
+          "domain": "gartner.com"
         }
       ]
     },
     "mofu": {
       "label": "MOFU sources",
-      "subtitle": "Data building",
+      "subtitle": "Live \u2014 43 monitored prompts",
       "stage": "mofu",
-      "sources": []
+      "sources": [
+        {
+          "rank": 1,
+          "title": "Top Brand Protection Software of 2026 - Podqi Insights",
+          "url": "https://podqi.com/blog/top-brand-protection-software-ranked",
+          "domain": "podqi.com"
+        },
+        {
+          "rank": 2,
+          "title": "8 Best Online Brand Protection Tools [2026] Ranked & Compared",
+          "url": "https://www.brandshield.com/blog/best-online-brand-protection-tools",
+          "domain": "brandshield.com"
+        },
+        {
+          "rank": 3,
+          "title": "Blog | 10 Best Brand Protection Tools Reviewed (2026 Updated List)",
+          "url": "https://www.marqvision.com/blog/brand-protection-tools",
+          "domain": "marqvision.com"
+        },
+        {
+          "rank": 4,
+          "title": "Best Brand Protection Software Reviews 2026 | Gartner Peer Insights",
+          "url": "https://www.gartner.com/reviews/market/brand-protection-software",
+          "domain": "gartner.com"
+        }
+      ]
     },
     "tofu": {
       "label": "TOFU sources",
-      "subtitle": "Data building",
+      "subtitle": "Live \u2014 15 monitored prompts",
       "stage": "tofu",
-      "sources": []
+      "sources": [
+        {
+          "rank": 1,
+          "title": "How to remove a counterfeit from Alibaba: 2026 step-by-step guide",
+          "url": "https://www.redpoints.com/blog/remove-a-counterfeit-from-alibaba",
+          "domain": "redpoints.com"
+        },
+        {
+          "rank": 2,
+          "title": "The complete guide to Amazon brand protection in 2026",
+          "url": "https://www.redpoints.com/blog/remove-counterfeit-amazon",
+          "domain": "redpoints.com"
+        },
+        {
+          "rank": 3,
+          "title": "Protecting Intellectual Property Rights on e-commerce stores",
+          "url": "https://www.gov.uk/government/publications/protecting-intellectual-property-rights-on-e-commerce-stores/protecting-intellectual-property-rights-on-e-commerce-stores",
+          "domain": "www.gov.uk"
+        },
+        {
+          "rank": 4,
+          "title": "How to remove unauthorized sellers & protect your brand on Amazon",
+          "url": "https://www.channelengine.com/en/blog/how-to-remove-unauthorized-sellers-on-amazon",
+          "domain": "channelengine.com"
+        }
+      ]
     }
   },
   "typeform_pending": [
