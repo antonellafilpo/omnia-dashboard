@@ -650,9 +650,12 @@ function renderAll() {
   document.getElementById('btn-next').disabled = isLatest;
   document.getElementById('latest-btn').style.display = isLatest ? 'none' : 'inline';
 
-  // KPIs
+// KPIs
   const prevD = idx > 0 ? data[idx - 1] : null;
   renderKPI('k-ca', d.bofu_ca, prevD?.bofu_ca, d.bofu_ca_avg4, mode === 'weekly');
+  renderSimpleKPI('k-bofu-overall', d.bofu_overall);
+  renderSimpleKPI('k-mofu', d.mofu);
+  renderSimpleKPI('k-tofu', d.tofu);
 
   // Competitor bars
   renderCompBars('comp-bars', d.competitors_bofu, d.bofu_ca_avg4, mode === 'weekly');
@@ -670,7 +673,13 @@ function renderAll() {
   renderPriorities();
   renderCitationBoxes();
 }
-
+function renderSimpleKPI(id, val) {
+  const el = document.getElementById(id);
+  if (!el || val === null || val === undefined) return;
+  el.textContent = Math.round(val) + '%';
+  el.classList.remove('--pending');
+}
+  
 function renderKPI(id, val, prev, avg, showAvg) {
   const el = document.getElementById(id);
   if (val === null) { el.textContent = '—'; el.className = 'kpi-value --pending'; return; }
