@@ -356,7 +356,34 @@ def main():
     if theme_results:
         data["themes"] = theme_results
 
-    # ── Per-prompt visibility for category-aware prompts (unchanged) ────────
+    # ── Per-theme prompt detail (NEW — this was never automated before) ─────
+    # The theme bars above (data["themes"]) already refreshed correctly, but
+    # the drill-down detail underneath each bar — data["theme_prompts"] — was
+    # hand-seeded once and never touched by this script. That's why it could
+    # drift out of sync with the bar's own percentage. We already have
+    # `all_prompts` from the MOFU/TOFU/BOFU-overall discovery step above, so
+    # we reuse it here instead of making extra topic-listing calls.
+    print("Fetching per-theme prompt detail…")
+    DRILLDOWN_THEMES = [t for t in THEME_TAGS if t != "category-aware"]
+    new_theme_prompts = {}
+    for theme in DRILLDOWN_THEMES:
+        theme_prompt_list = [p for p in all_prompts if theme in (p.get("tags") or []) and p.get("isMonitoringActive")]
+        entries = []
+        for p in theme_prompt_list:
+            stage = next((s for s in ("TOFU", "MOFU", "BOFU") if s in (p.get("tags") or [])), None)
+            try:
+                mentions, rp_rank = get_prompt_visibility(p["id"], w_start, w_end)
+                entries.append({
+                    "text": p["query"], "stage": stage, "rp_rank": rp_rank,
+                    "top_mentions": mentions[:3],
+                })
+            except Exception as e:
+                print(f"  Error on theme={theme} prompt={p['query'][:40]}: {e}")
+        new_theme_prompts[theme] = entries
+        print(f"  {theme}: refreshed {len(entries)} prompts")
+    data["theme_prompts"] = new_theme_prompts
+
+
     print("Fetching per-prompt visibility…")
     updated_prompts = []
     for p in data.get("category_aware_prompts", []):
