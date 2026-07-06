@@ -153,7 +153,7 @@ jobs:
 
                 <!-- CTA -->
                 <tr><td style="padding:28px 32px 32px;">
-                  <a href="https://lwoue-collab.github.io/omnia-dashboard/"
+                  <a href="https://antonellafilpo.github.io/omnia-dashboard/"
                      style="display:inline-block;background:#141414;color:#ffffff;text-decoration:none;padding:12px 24px;border-radius:8px;font-size:13px;font-weight:500;">
                     View full dashboard →
                   </a>
@@ -161,7 +161,7 @@ jobs:
 
                 <!-- Footer -->
                 <tr><td style="background:#F7F6F3;padding:16px 32px;border-top:1px solid #E8E7E3;">
-                  <p style="margin:0;font-size:11px;color:#BBB;">Sent automatically every Monday · Red Points AI Visibility Dashboard · <a href="https://github.com/lwoue-collab/omnia-dashboard/actions" style="color:#BBB;">View workflow logs</a></p>
+                  <p style="margin:0;font-size:11px;color:#BBB;">Sent automatically every Monday · Red Points AI Visibility Dashboard · <a href="https://github.com/antonellafilpo/omnia-dashboard/actions" style="color:#BBB;">View workflow logs</a></p>
                 </td></tr>
 
               </table>
@@ -202,33 +202,42 @@ jobs:
           fi
 
           CA=$(python3 -c "import json; d=json.load(open('data.json')); w=d.get('weekly',[]); print(str(w[-1].get('bofu_ca','—'))+'%' if w and w[-1].get('bofu_ca') is not None else '—')" 2>/dev/null || echo "—")
-          PREV_CA=$(python3 -c "import json; d=json.load(open('data.json')); w=d.get('weekly',[]); print(str(w[-2].get('bofu_ca','—'))+'%' if len(w)>=2 and w[-2].get('bofu_ca') is not None else '—')" 2>/dev/null || echo "—")
-          PERIOD=$(python3 -c "import json; d=json.load(open('data.json')); w=d.get('weekly',[]); print(w[-1].get('period','—') if w else '—')" 2>/dev/null || echo "—")
+PREV_CA=$(python3 -c "import json; d=json.load(open('data.json')); w=d.get('weekly',[]); print(str(w[-2].get('bofu_ca','—'))+'%' if len(w)>=2 and w[-2].get('bofu_ca') is not None else '—')" 2>/dev/null || echo "—")
+PERIOD=$(python3 -c "import json; d=json.load(open('data.json')); w=d.get('weekly',[]); print(w[-1].get('period','—') if w else '—')" 2>/dev/null || echo "—")
+BOFU_OVERALL=$(python3 -c "import json; d=json.load(open('data.json')); w=d.get('weekly',[]); print(str(w[-1].get('bofu_overall','—'))+'%' if w and w[-1].get('bofu_overall') is not None else 'Building baseline')" 2>/dev/null || echo "—")
+MOFU=$(python3 -c "import json; d=json.load(open('data.json')); w=d.get('weekly',[]); print(str(w[-1].get('mofu','—'))+'%' if w and w[-1].get('mofu') is not None else 'Building baseline')" 2>/dev/null || echo "—")
+TOFU=$(python3 -c "import json; d=json.load(open('data.json')); w=d.get('weekly',[]); print(str(w[-1].get('tofu','—'))+'%' if w and w[-1].get('tofu') is not None else 'Building baseline')" 2>/dev/null || echo "—")
 
-          curl -s -X POST "$SLACK_WEBHOOK_URL" \
-            -H 'Content-type: application/json' \
-            --data "{
-              \"blocks\": [
-                {
-                  \"type\": \"header\",
-                  \"text\": { \"type\": \"plain_text\", \"text\": \"$ICON Omnia AI Visibility — $PERIOD\" }
-                },
-                {
-                  \"type\": \"section\",
-                  \"fields\": [
-                    { \"type\": \"mrkdwn\", \"text\": \"*BOFU category-aware*\n$CA (prev: $PREV_CA)\" },
-                    { \"type\": \"mrkdwn\", \"text\": \"*MOFU*\nBuilding baseline\" },
-                    { \"type\": \"mrkdwn\", \"text\": \"*TOFU*\nBuilding baseline\" },
-                    { \"type\": \"mrkdwn\", \"text\": \"*Status*\n$STATUS_TEXT\" }
-                  ]
-                },
-                {
-                  \"type\": \"actions\",
-                  \"elements\": [
-                    {
-                      \"type\": \"button\",
-                      \"text\": { \"type\": \"plain_text\", \"text\": \"View dashboard\" },
-                      \"url\": \"https://lwoue-collab.github.io/omnia-dashboard/\"
+curl -s -X POST "$SLACK_WEBHOOK_URL" \
+  -H 'Content-type: application/json' \
+  --data "{
+    \"blocks\": [
+      {
+        \"type\": \"header\",
+        \"text\": { \"type\": \"plain_text\", \"text\": \"$ICON Omnia AI Visibility — $PERIOD\" }
+      },
+      {
+        \"type\": \"section\",
+        \"fields\": [
+          { \"type\": \"mrkdwn\", \"text\": \"*BOFU category-aware*\n$CA (prev: $PREV_CA)\" },
+          { \"type\": \"mrkdwn\", \"text\": \"*BOFU overall*\n$BOFU_OVERALL\" },
+          { \"type\": \"mrkdwn\", \"text\": \"*MOFU*\n$MOFU\" },
+          { \"type\": \"mrkdwn\", \"text\": \"*TOFU*\n$TOFU\" },
+          { \"type\": \"mrkdwn\", \"text\": \"*Status*\n$STATUS_TEXT\" }
+        ]
+      },
+      {
+        \"type\": \"actions\",
+        \"elements\": [
+          {
+            \"type\": \"button\",
+            \"text\": { \"type\": \"plain_text\", \"text\": \"View dashboard\" },
+            \"url\": \"https://antonellafilpo.github.io/omnia-dashboard/\"
+          }
+        ]
+      }
+    ]
+  }"
                     }
                   ]
                 }
