@@ -96,6 +96,15 @@ THEME_TAGS = [
 
 KNOWN_COMPETITORS = ["Red Points", "BrandShield", "Corsearch", "MarqVision"]
 
+THEME_LABELS = {
+    "category-aware": "BOFU category-aware content",
+    "brand-impersonation": "Brand impersonation content",
+    "fake-products": "Counterfeit / fake products content",
+    "unauthorized-sellers": "Unauthorized seller / gray market content",
+    "manual-enforcement": "Manual enforcement / automation content",
+    "global-enforcement": "Global enforcement (APAC/China) content",
+}
+
 # ── Low-level API helpers ───────────────────────────────────────────────────
 
 def headers():
@@ -109,6 +118,41 @@ def _get(path, params):
     r = requests.get(url, headers=headers(), params=params)
     r.raise_for_status()
     return r.json()
+
+def compute_theme_priority(theme_key, our_visibility, prompts):
+    """Turn one theme's prompt-level mention data into a single content
+    priority row: who's leading, by how much, and what real content is
+    currently winning the citations. No editorial judgment included —
+    purely derived from Omnia data. `prompts` is a list of dicts each with
+    a 'stage' and 'top_mentions' (list of {name, visibility, owned})."""
+    stages = sorted({p["stage"] for p in prompts if p.get("stage")})
+    competitor_totals = defaultdict(list)
+    for p in prompts:
+        for m in (p.get("top_mentions") or []):
+            if not m.get("owned"):
+                competitor_totals[m["name"]].append(m["visibility"])
+    leader, leader_score = None, None
+    if competitor_totals:
+        leader = max(competitor_totals, key=lambda k: sum(competitor_totals[k]) / len(competitor_totals[k]))
+        leader_score = round(sum(competitor_totals[leader]) / len(competitor_totals[leader]))
+
+    ranks = [p["rp_rank"] for p in prompts if p.get("rp_rank")]
+    our_rank = f"Rank {round(sum(ranks) / len(ranks))}" if ranks else "Unranked"
+
+    gap_val = round(our_visibility - leader_score) if (our_visibility is not None and leader_score is not None) else None
+    gap_str = (f"+{gap_val}pp" if gap_val > 0 else f"{gap_val}pp") if gap_val is not None else "—"
+    status = (
+        "leading" if gap_val is not None and gap_val >= 0 else
+        "close" if gap_val is not None and gap_val >= -15 else
+        "gap" if gap_val is not None else "pending"
+    )
+
+    return {
+        "theme": theme_key, "content": THEME_LABELS.get(theme_key, theme_key),
+        "stages": stages, "leader": leader, "leader_score": leader_score,
+        "our_rank": our_rank, "gap": gap_str, "status": status,
+        "_gap_val": gap_val if gap_val is not None else -9999,  # sort key only, stripped before saving
+    }
 
 def get_visibility_by_tag(tag, start_date, end_date, top_n=10):
     """Brand-level visibility filtered by tag. Only reliable for L2/L3 tags
@@ -366,8 +410,10 @@ def main():
     print("Fetching per-theme prompt detail…")
     DRILLDOWN_THEMES = [t for t in THEME_TAGS if t != "category-aware"]
     new_theme_prompts = {}
+    theme_prompt_ids_map = {}
     for theme in DRILLDOWN_THEMES:
         theme_prompt_list = [p for p in all_prompts if theme in (p.get("tags") or []) and p.get("isMonitoringActive")]
+        theme_prompt_ids_map[theme] = [p["id"] for p in theme_prompt_list]
         entries = []
         for p in theme_prompt_list:
             stage = next((s for s in ("TOFU", "MOFU", "BOFU") if s in (p.get("tags") or [])), None)
@@ -402,6 +448,44 @@ def main():
             print(f"  Error on {p['text'][:40]}: {e}")
             updated_prompts.append(p)
     data["category_aware_prompts"] = updated_prompts
+
+    # ── Content priorities (NEW — was 100% hand-typed and frozen before) ────
+    # Built from the exact same theme_prompts / category_aware_prompts data
+    # just refreshed above — no separate API calls needed for the numbers.
+    # We rank every theme by how far behind the leading competitor Red
+    # Points is, and surface the 5 biggest gaps. "what_wins" is a real,
+    # live list of the content currently being cited for that theme's
+    # prompts (via citations aggregates) — not an editorial judgment.
+    print("Generating content priorities…")
+    theme_our_visibility = {t["name"]: t["visibility"] for t in theme_results}
+    theme_our_visibility["category-aware"] = w_ca
+
+    all_theme_ids = dict(theme_prompt_ids_map)
+    all_theme_ids["category-aware"] = [cp["id"] for cp in CATEGORY_AWARE_PROMPTS]
+
+    priorities = []
+    for theme in THEME_TAGS:
+        prompts_for_theme = (
+            [{"stage": "BOFU", "rp_rank": p.get("rp_rank"), "top_mentions": p.get("top_mentions")} for p in updated_prompts]
+            if theme == "category-aware" else new_theme_prompts.get(theme, [])
+        )
+        if not prompts_for_theme:
+            continue
+        row = compute_theme_priority(theme, theme_our_visibility.get(theme), prompts_for_theme)
+        row["what_wins"] = [
+            {"label": c["title"], "url": c["url"], "type": "neutral"}
+            for c in compute_top_citations(all_theme_ids.get(theme, []), w_start, w_end, top_n=3)
+        ]
+        priorities.append(row)
+
+    priorities.sort(key=lambda r: r["_gap_val"])
+    priorities = priorities[:5]
+    for i, row in enumerate(priorities):
+        row["priority"] = i + 1
+        del row["_gap_val"]
+    data["content_priorities"] = priorities
+    print(f"  Generated {len(priorities)} content priorities (biggest gap: "
+          f"{priorities[0]['content'] if priorities else 'n/a'})")
 
     # ── Citation sources — now refreshed automatically every run ────────────
     print("Refreshing citation sources…")
