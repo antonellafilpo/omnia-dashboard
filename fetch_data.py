@@ -119,27 +119,48 @@ def _get(path, params):
     r.raise_for_status()
     return r.json()
 
-def compute_theme_priority(theme_key, our_visibility, prompts):
-    """Turn one theme's prompt-level mention data into a single content
-    priority row: who's leading, by how much, and what real content is
-    currently winning the citations. No editorial judgment included —
-    purely derived from Omnia data. `prompts` is a list of dicts each with
-    a 'stage' and 'top_mentions' (list of {name, visibility, owned})."""
-    stages = sorted({p["stage"] for p in prompts if p.get("stage")})
-    competitor_totals = defaultdict(list)
-    for p in prompts:
-        for m in (p.get("top_mentions") or []):
-            if not m.get("owned"):
-                competitor_totals[m["name"]].append(m["visibility"])
-    leader, leader_score = None, None
-    if competitor_totals:
-        leader = max(competitor_totals, key=lambda k: sum(competitor_totals[k]) / len(competitor_totals[k]))
-        leader_score = round(sum(competitor_totals[leader]) / len(competitor_totals[leader]))
+def domain_to_label(domain):
+    """Best-effort domain -> readable brand name (e.g. 'corsearch.com' ->
+    'Corsearch'). Not guaranteed to match a brand's exact preferred casing
+    (e.g. 'zerofox.com' -> 'Zerofox' not 'ZeroFox'), but consistent and
+    accurate enough for a data-driven label."""
+    core = domain.replace("www.", "").split(".")[0]
+    return core.replace("-", " ").title()
 
-    ranks = [p["rp_rank"] for p in prompts if p.get("rp_rank")]
-    our_rank = f"Rank {round(sum(ranks) / len(ranks))}" if ranks else "Unranked"
+def compute_theme_content_ranking(theme_key, prompt_ids, start_date, end_date, top_n_display=4):
+    """Builds ONE ranked list of domains by citation share for a theme, so
+    'leader', 'our_rank', 'gap', and 'what_wins' are guaranteed to agree
+    with each other — no more mixing a visibility-based leader with an
+    unrelated citations-based content list. If Red Points leads, our own
+    domain naturally lands at #1. If we're 'Rank 2', our own URL is
+    guaranteed to be the #2 entry in what_wins, because it's the same list."""
+    domain_totals = defaultdict(int)
+    domain_best = {}
+    for pid in prompt_ids:
+        for c in get_prompt_citations(pid, start_date, end_date, top_n=25):
+            domain = c.get("domain", "")
+            if not domain:
+                continue
+            cites = c.get("totalCitations", 0)
+            domain_totals[domain] += cites
+            if domain not in domain_best or cites > domain_best[domain]["totalCitations"]:
+                domain_best[domain] = {"title": c.get("title") or domain, "url": c.get("url", ""), "totalCitations": cites}
 
-    gap_val = round(our_visibility - leader_score) if (our_visibility is not None and leader_score is not None) else None
+    ranking = sorted(domain_totals.items(), key=lambda kv: kv[1], reverse=True)
+    total_all = sum(domain_totals.values())
+
+    our_index = next((i for i, (d, _) in enumerate(ranking) if d == "redpoints.com"), None)
+    our_rank = our_index + 1 if our_index is not None else None
+    our_score = round((domain_totals.get("redpoints.com", 0) / total_all) * 100) if total_all else 0
+
+    if ranking:
+        leader_domain, leader_citations = ranking[0]
+        leader_label = "Red Points" if leader_domain == "redpoints.com" else domain_to_label(leader_domain)
+        leader_score = round((leader_citations / total_all) * 100) if total_all else 0
+    else:
+        leader_label, leader_score = None, None
+
+    gap_val = (our_score - leader_score) if ranking else None
     gap_str = (f"+{gap_val}pp" if gap_val > 0 else f"{gap_val}pp") if gap_val is not None else "—"
     status = (
         "leading" if gap_val is not None and gap_val >= 0 else
@@ -147,11 +168,27 @@ def compute_theme_priority(theme_key, our_visibility, prompts):
         "gap" if gap_val is not None else "pending"
     )
 
+    what_wins = []
+    for i, (domain, _) in enumerate(ranking[:top_n_display]):
+        entry = domain_best[domain]
+        what_wins.append({
+            "label": entry["title"], "url": entry["url"],
+            "type": "ok" if domain == "redpoints.com" else ("warn" if i == 0 else "neutral"),
+        })
+    # If our own domain didn't make the displayed slice, append it anyway so
+    # "our_rank" is never a number the person can't actually see evidence for.
+    if our_index is not None and our_index >= top_n_display:
+        entry = domain_best["redpoints.com"]
+        what_wins.append({"label": f"{entry['title']} (our Rank {our_rank})", "url": entry["url"], "type": "ok"})
+    elif our_index is None:
+        what_wins.append({"label": "Red Points has no cited page for this theme yet", "url": "", "type": "neutral"})
+
     return {
         "theme": theme_key, "content": THEME_LABELS.get(theme_key, theme_key),
-        "stages": stages, "leader": leader, "leader_score": leader_score,
-        "our_rank": our_rank, "gap": gap_str, "status": status,
-        "_gap_val": gap_val if gap_val is not None else -9999,  # sort key only, stripped before saving
+        "leader": leader_label, "leader_score": leader_score,
+        "our_rank": f"Rank {our_rank}" if our_rank else "Not cited",
+        "gap": gap_str, "status": status, "what_wins": what_wins,
+        "_gap_val": gap_val if gap_val is not None else -9999,
     }
 
 def get_visibility_by_tag(tag, start_date, end_date, top_n=10):
@@ -457,25 +494,21 @@ def main():
     # live list of the content currently being cited for that theme's
     # prompts (via citations aggregates) — not an editorial judgment.
     print("Generating content priorities…")
-    theme_our_visibility = {t["name"]: t["visibility"] for t in theme_results}
-    theme_our_visibility["category-aware"] = w_ca
-
     all_theme_ids = dict(theme_prompt_ids_map)
     all_theme_ids["category-aware"] = [cp["id"] for cp in CATEGORY_AWARE_PROMPTS]
 
+    theme_stages = {}
+    for theme in DRILLDOWN_THEMES:
+        theme_stages[theme] = sorted({p["stage"] for p in new_theme_prompts.get(theme, []) if p.get("stage")})
+    theme_stages["category-aware"] = ["BOFU"]
+
     priorities = []
     for theme in THEME_TAGS:
-        prompts_for_theme = (
-            [{"stage": "BOFU", "rp_rank": p.get("rp_rank"), "top_mentions": p.get("top_mentions")} for p in updated_prompts]
-            if theme == "category-aware" else new_theme_prompts.get(theme, [])
-        )
-        if not prompts_for_theme:
+        ids = all_theme_ids.get(theme, [])
+        if not ids:
             continue
-        row = compute_theme_priority(theme, theme_our_visibility.get(theme), prompts_for_theme)
-        row["what_wins"] = [
-            {"label": c["title"], "url": c["url"], "type": "neutral"}
-            for c in compute_top_citations(all_theme_ids.get(theme, []), w_start, w_end, top_n=3)
-        ]
+        row = compute_theme_content_ranking(theme, ids, w_start, w_end)
+        row["stages"] = theme_stages.get(theme, [])
         priorities.append(row)
 
     priorities.sort(key=lambda r: r["_gap_val"])
