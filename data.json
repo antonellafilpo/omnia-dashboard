@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31",
+  "lastUpdated": "2026-09-07",
   "weekly": [
     {
       "period": "17 Mar 2026",
@@ -741,6 +741,36 @@
           "owned": false
         }
       ]
+    },
+    {
+      "period": "Week of 7 Sep 2026",
+      "bofu_ca": 84,
+      "bofu_ca_avg4": 91,
+      "mofu": 41,
+      "tofu": 4,
+      "bofu_overall": 100,
+      "competitors_bofu": [
+        {
+          "name": "Red Points",
+          "visibility": 84,
+          "owned": true
+        },
+        {
+          "name": "BrandShield",
+          "visibility": 64,
+          "owned": false
+        },
+        {
+          "name": "Corsearch",
+          "visibility": 53,
+          "owned": false
+        },
+        {
+          "name": "MarqVision",
+          "visibility": 47,
+          "owned": false
+        }
+      ]
     }
   ],
   "monthly": [
@@ -980,27 +1010,57 @@
           "owned": false
         }
       ]
+    },
+    {
+      "period": "Sep 2026",
+      "bofu_ca": 89,
+      "bofu_ca_avg4": 90,
+      "mofu": 50,
+      "tofu": 3,
+      "bofu_overall": 100,
+      "competitors_bofu": [
+        {
+          "name": "Red Points",
+          "visibility": 89,
+          "owned": true
+        },
+        {
+          "name": "BrandShield",
+          "visibility": 64,
+          "owned": false
+        },
+        {
+          "name": "Corsearch",
+          "visibility": 55,
+          "owned": false
+        },
+        {
+          "name": "MarqVision",
+          "visibility": 53,
+          "owned": false
+        }
+      ]
     }
   ],
   "themes": [
     {
       "name": "category-aware",
-      "visibility": 87,
+      "visibility": 84,
       "status": "leading"
     },
     {
       "name": "global-enforcement",
-      "visibility": 57,
+      "visibility": 52,
       "status": "close"
     },
     {
       "name": "manual-enforcement",
-      "visibility": 67,
+      "visibility": 62,
       "status": "leading"
     },
     {
       "name": "unauthorized-sellers",
-      "visibility": 33,
+      "visibility": 32,
       "status": "close"
     },
     {
@@ -1010,7 +1070,7 @@
     },
     {
       "name": "brand-impersonation",
-      "visibility": 35,
+      "visibility": 36,
       "status": "close"
     }
   ],
@@ -1027,13 +1087,13 @@
           "owned": true
         },
         {
-          "name": "BrandProtector.ai",
-          "visibility": 75,
+          "name": "Brand Protector",
+          "visibility": 100,
           "owned": false
         },
         {
-          "name": "BrandProtection.ai",
-          "visibility": 50,
+          "name": "Corsearch",
+          "visibility": 75,
           "owned": false
         }
       ]
@@ -1055,7 +1115,7 @@
           "owned": false
         },
         {
-          "name": "Amazon",
+          "name": "ClaimIPX",
           "visibility": 25,
           "owned": false
         }
@@ -1077,18 +1137,18 @@
     {
       "text": "Which brand protection platforms use smart rules to automate detection and enforcement?",
       "modifier": null,
-      "rp_rank": 2,
-      "rp_visibility": 75,
+      "rp_rank": 1,
+      "rp_visibility": 100,
       "top_mentions": [
+        {
+          "name": "Red Points",
+          "visibility": 100,
+          "owned": true
+        },
         {
           "name": "MarqVision",
           "visibility": 100,
           "owned": false
-        },
-        {
-          "name": "Red Points",
-          "visibility": 75,
-          "owned": true
         },
         {
           "name": "BrandShield",
@@ -1100,18 +1160,18 @@
     {
       "text": "Which brand protection platforms use predictive analytics for enforcement and risk prioritization?",
       "modifier": null,
-      "rp_rank": 2,
+      "rp_rank": 1,
       "rp_visibility": 75,
       "top_mentions": [
-        {
-          "name": "MarqVision",
-          "visibility": 100,
-          "owned": false
-        },
         {
           "name": "Red Points",
           "visibility": 75,
           "owned": true
+        },
+        {
+          "name": "BrandShield",
+          "visibility": 75,
+          "owned": false
         },
         {
           "name": "ZeroFox",
@@ -1133,12 +1193,12 @@
         },
         {
           "name": "BrandShield",
-          "visibility": 75,
+          "visibility": 100,
           "owned": false
         },
         {
-          "name": "Fortra",
-          "visibility": 75,
+          "name": "Corsearch",
+          "visibility": 50,
           "owned": false
         }
       ]
@@ -1173,7 +1233,7 @@
           "owned": false
         },
         {
-          "name": "Corsearch",
+          "name": "ZeroFox",
           "visibility": 100,
           "owned": false
         }
@@ -1196,20 +1256,20 @@
       "text": "Which brand protection software is best for stopping gray market and parallel imports?",
       "modifier": null,
       "rp_rank": 1,
-      "rp_visibility": 100,
+      "rp_visibility": 75,
       "top_mentions": [
         {
           "name": "Red Points",
-          "visibility": 100,
+          "visibility": 75,
           "owned": true
         },
         {
-          "name": "Corsearch",
+          "name": "BrandShield",
           "visibility": 75,
           "owned": false
         },
         {
-          "name": "GreyScout",
+          "name": "Corsearch",
           "visibility": 75,
           "owned": false
         }
@@ -1231,18 +1291,18 @@
     {
       "text": "Which brand protection solution covers the most channels?",
       "modifier": null,
-      "rp_rank": 2,
-      "rp_visibility": 75,
+      "rp_rank": 1,
+      "rp_visibility": 100,
       "top_mentions": [
+        {
+          "name": "Red Points",
+          "visibility": 100,
+          "owned": true
+        },
         {
           "name": "ZeroFox",
           "visibility": 100,
           "owned": false
-        },
-        {
-          "name": "Red Points",
-          "visibility": 75,
-          "owned": true
         },
         {
           "name": "BrandShield",
@@ -1264,12 +1324,12 @@
         },
         {
           "name": "Corsearch",
-          "visibility": 75,
+          "visibility": 100,
           "owned": false
         },
         {
-          "name": "ZeroFox",
-          "visibility": 75,
+          "name": "Bolster",
+          "visibility": 50,
           "owned": false
         }
       ]
@@ -1277,22 +1337,22 @@
     {
       "text": "What are the benefits of using AI-driven solutions for online brand protection?",
       "modifier": null,
-      "rp_rank": 1,
-      "rp_visibility": 50,
+      "rp_rank": null,
+      "rp_visibility": null,
       "top_mentions": [
         {
-          "name": "Red Points",
-          "visibility": 50,
-          "owned": true
-        },
-        {
           "name": "Akamai",
-          "visibility": 50,
+          "visibility": 100,
           "owned": false
         },
         {
-          "name": "Amazon",
-          "visibility": 50,
+          "name": "Anaqua",
+          "visibility": 100,
+          "owned": false
+        },
+        {
+          "name": "BrandShield",
+          "visibility": 100,
           "owned": false
         }
       ]
@@ -1314,21 +1374,21 @@
       "text": "Which brand protection platforms have the fastest takedown times?",
       "modifier": null,
       "rp_rank": 2,
-      "rp_visibility": 75,
+      "rp_visibility": 50,
       "top_mentions": [
         {
-          "name": "BrandShield",
-          "visibility": 100,
+          "name": "Netcraft",
+          "visibility": 75,
           "owned": false
         },
         {
           "name": "Red Points",
-          "visibility": 75,
+          "visibility": 50,
           "owned": true
         },
         {
-          "name": "Amazon",
-          "visibility": 75,
+          "name": "Bolster",
+          "visibility": 50,
           "owned": false
         }
       ]
@@ -1363,15 +1423,20 @@
       "theme": "global-enforcement",
       "content": "Global enforcement (APAC/China) content",
       "leader": "Marqvision",
-      "leader_score": 16,
-      "our_rank": "Rank 2",
-      "gap": "-11pp",
+      "leader_score": 12,
+      "our_rank": "Rank 3",
+      "gap": "-6pp",
       "status": "close",
       "what_wins": [
         {
-          "label": "Taobao Fake Product Removal | August 2026",
-          "url": "https://www.marqvision.com/blog/how-to-remove-a-counterfeit-from-taobao",
+          "label": "Is Alibaba Safe for Brands? How to Enforce Intellectual Property Rights in 2025",
+          "url": "https://www.marqvision.com/blog/is-alibaba-safe-for-brands-enforce-ip-rights",
           "type": "warn"
+        },
+        {
+          "label": "Protecting Your Brand: How to Remove Counterfeits from Alibaba - Corsearch",
+          "url": "https://corsearch.com/content-library/blog/protecting-your-brand-how-to-remove-counterfeits-from-alibaba",
+          "type": "neutral"
         },
         {
           "label": "Brand & IP Protection in Mainland China - Red Points",
@@ -1382,11 +1447,6 @@
           "label": "\u6dd8\u5929\u77e5\u8bc6\u4ea7\u6743\u4fdd\u62a4\u5e73\u53f0- Taobao and Tmall Group IPP platform",
           "url": "https://ipp.alibabagroup.com/instruction/en.htm",
           "type": "neutral"
-        },
-        {
-          "label": "Taobao Counterfeit Risk: The 2025 Full Guide - Axencis",
-          "url": "https://axencis.com/blog/taobao-counterfeit-risk-the-2025-full-guide",
-          "type": "neutral"
         }
       ],
       "stages": [
@@ -1396,43 +1456,42 @@
       "priority": 1
     },
     {
-      "theme": "brand-impersonation",
-      "content": "Brand impersonation content",
-      "leader": "X",
-      "leader_score": 14,
+      "theme": "manual-enforcement",
+      "content": "Manual enforcement / automation content",
+      "leader": "Marqvision",
+      "leader_score": 10,
       "our_rank": "Rank 5",
-      "gap": "-8pp",
+      "gap": "-6pp",
       "status": "close",
       "what_wins": [
         {
-          "label": "My company brand or org",
-          "url": "https://help.x.com/en/forms/authenticity/impersonation/my-company-brand-or-org",
+          "label": "10 Best Brand Protection Tools Reviewed (2026 Updated List)",
+          "url": "https://www.marqvision.com/blog/brand-protection-tools",
           "type": "warn"
         },
         {
-          "label": "Presentamos nuevas actualizaciones en la Protecci\u00f3n de derechos de marca, incluida la ampliaci\u00f3n de reportes de anuncios fraudulentos | Acerca de Meta",
-          "url": "https://about.fb.com/ltam/news/2025/08/presentamos-nuevas-actualizaciones-en-la-proteccion-de-derechos-de-marca-incluida-la-ampliacion-de-reportes-de-anuncios-fraudulentos",
+          "label": "Podqi | Relentless Brand Protection",
+          "url": "https://podqi.com",
           "type": "neutral"
         },
         {
-          "label": "Report a Facebook profile or Page pretending to be you or someone else | Meta Business Help Center",
-          "url": "https://www.facebook.com/business/help/174210519303259",
+          "label": "Counterfeit Takedown Services | Axencis Brand Protection",
+          "url": "https://axencis.com/takedowns",
           "type": "neutral"
         },
         {
-          "label": "Unhandled Thrown Response!",
-          "url": "https://support.tiktok.com/en/search?searchTerm=TikTok%20report%20account%20does%20user%20get%20notified",
+          "label": "Brand Protection KPIs: Measure Outcomes, Not Just Takedowns",
+          "url": "https://corsearch.com/blogs/brand-protection-kpis-how-to-focus-on-outcomes-not-takedowns",
           "type": "neutral"
         },
         {
-          "label": "How to report fraud on Facebook: fake pages, copyright and counterfeits (our Rank 5)",
-          "url": "https://www.redpoints.com/blog/how-to-report-fraud-on-facebook",
+          "label": "DMCA Takedown Service - Protect Your Content Today (our Rank 5)",
+          "url": "https://www.redpoints.com/usecase/dmca-takedown-service",
           "type": "ok"
         }
       ],
       "stages": [
-        "MOFU",
-        "TOFU"
+        "MOFU"
       ],
       "priority": 2
     },
@@ -1440,35 +1499,30 @@
       "theme": "fake-products",
       "content": "Counterfeit / fake products content",
       "leader": "Marqvision",
-      "leader_score": 9,
-      "our_rank": "Rank 6",
-      "gap": "-6pp",
+      "leader_score": 8,
+      "our_rank": "Rank 3",
+      "gap": "-4pp",
       "status": "close",
       "what_wins": [
         {
-          "label": "Temu IP Infringement Reporting Guide: August 2026 - MarqVision",
+          "label": "Temu IP Violation Reporting Guide | August 2026 - MarqVision",
           "url": "https://www.marqvision.com/blog/how-to-report-fake-products-on-temu",
           "type": "warn"
         },
         {
-          "label": "How to report a violation to Amazon | Sell on Amazon - Sell on Amazon",
-          "url": "https://sell.amazon.com/blog/report-a-violation-to-amazon",
+          "label": "Top Brand Protection Software in 2026",
+          "url": "https://podqi.com/blog/top-brand-protection-software-ranked",
           "type": "neutral"
         },
         {
-          "label": "How to Report Counterfeit Products on Amazon: Guide",
-          "url": "https://www.brandalignment.com/report-counterfeit-products-on-amazon",
-          "type": "neutral"
-        },
-        {
-          "label": "TikTok Shop | Intellectual property rights: How TikTok Shop's IPPC helps protect your IPR",
-          "url": "https://seller.tiktok.com/blog/intellectual-property-rights-how-tiktok-shop-s-em-em-ippc-em-em-helps-protect-your-ipr/10023696",
-          "type": "neutral"
-        },
-        {
-          "label": "7 Best Brand Protection Tools for 2026: Ranked & reviewed - Red Points (our Rank 6)",
-          "url": "https://www.redpoints.com/blog/best-brand-protection-software",
+          "label": "The complete guide to Amazon brand protection in 2026",
+          "url": "https://www.redpoints.com/blog/remove-counterfeit-amazon",
           "type": "ok"
+        },
+        {
+          "label": "2024 Brand Protection Report - Trustworthy Shopping at Amazon",
+          "url": "https://trustworthyshopping.aboutamazon.com/2024-brand-protection-report",
+          "type": "neutral"
         }
       ],
       "stages": [
@@ -1478,78 +1532,73 @@
       "priority": 3
     },
     {
-      "theme": "category-aware",
-      "content": "BOFU category-aware content",
-      "leader": "Brandshield",
-      "leader_score": 9,
-      "our_rank": "Rank 2",
+      "theme": "unauthorized-sellers",
+      "content": "Unauthorized seller / gray market content",
+      "leader": "Brandalignment",
+      "leader_score": 5,
+      "our_rank": "Rank 3",
       "gap": "-1pp",
       "status": "close",
       "what_wins": [
+        {
+          "label": "What Are Parallel Imports? Guide for Brands",
+          "url": "https://www.brandalignment.com/what-are-parallel-imports",
+          "type": "warn"
+        },
+        {
+          "label": "Blog | How to Respond to Unauthorized Sellers on Amazon - June 2026",
+          "url": "https://www.marqvision.com/blog/unauthorized-sellers-amazon",
+          "type": "neutral"
+        },
+        {
+          "label": "Unauthorized sellers and resellers: the complete detection, enforcement & conversion guide (2026) - Red Points",
+          "url": "https://www.redpoints.com/blog/identify-and-stop-unauthorized-sellers",
+          "type": "ok"
+        },
         {
           "label": "Best Online Brand Protection Tools 2026: Ranked & Compared",
           "url": "https://www.brandshield.com/blog/the-8-best-online-brand-protection-tools-for-2026",
-          "type": "warn"
-        },
-        {
-          "label": "Brand Protection Software | Online Brand Protection Solutions and Services | Red Points",
-          "url": "https://www.redpoints.com/brand-protection-software",
-          "type": "ok"
-        },
-        {
-          "label": "10 Best Brand Protection Tools Reviewed (2026 Updated List)",
-          "url": "https://www.marqvision.com/blog/brand-protection-tools",
           "type": "neutral"
-        },
-        {
-          "label": "6 Best Brand Protection Platforms for 2026: Safeguard Your Online Reputation",
-          "url": "https://www.netcraft.com/blog/6-best-brand-protection-platforms-for-defending-your-company-s-online-reputation",
-          "type": "neutral"
-        }
-      ],
-      "stages": [
-        "BOFU"
-      ],
-      "priority": 4
-    },
-    {
-      "theme": "unauthorized-sellers",
-      "content": "Unauthorized seller / gray market content",
-      "leader": "Remove",
-      "leader_score": 4,
-      "our_rank": "Rank 7",
-      "gap": "-1pp",
-      "status": "close",
-      "what_wins": [
-        {
-          "label": "Brand Protection Software Comparison: Which Tools Actually Help ...",
-          "url": "https://www.remove.tech/brand-blog/brand-protection-software-comparison-which-tools-actually-help-with-takedowns",
-          "type": "warn"
-        },
-        {
-          "label": "10 Best Brand Protection Tools Reviewed (2026 Updated List)",
-          "url": "https://www.marqvision.com/blog/brand-protection-tools",
-          "type": "neutral"
-        },
-        {
-          "label": "MAP Compliance: What It Is and How to Enforce It",
-          "url": "https://www.brandalignment.com/map-compliance",
-          "type": "neutral"
-        },
-        {
-          "label": "Brand Registry and Unauthorized Resellers",
-          "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/85e17702-d4c5-4e43-8a5f-f5b0538eae1a?mons_sel_locale=en_US",
-          "type": "neutral"
-        },
-        {
-          "label": "Unauthorized sellers and resellers: the complete detection, enforcement & conversion guide (2026) - Red Points (our Rank 7)",
-          "url": "https://www.redpoints.com/blog/identify-and-stop-unauthorized-sellers",
-          "type": "ok"
         }
       ],
       "stages": [
         "MOFU",
         "TOFU"
+      ],
+      "priority": 4
+    },
+    {
+      "theme": "category-aware",
+      "content": "BOFU category-aware content",
+      "leader": "Red Points",
+      "leader_score": 8,
+      "our_rank": "Rank 1",
+      "gap": "0pp",
+      "status": "leading",
+      "what_wins": [
+        {
+          "label": "Brand Protection Software - Online Brand Protection Services | Red Points",
+          "url": "https://www.redpoints.com/brand-protection-software",
+          "type": "ok"
+        },
+        {
+          "label": "Brand Protection Software | ZeroFox",
+          "url": "https://www.zerofox.com/solutions/protection/brand-protection",
+          "type": "neutral"
+        },
+        {
+          "label": "Corsearch Zeal 2.0 \u2013 AI\u2011Native Brand Protection Platform",
+          "url": "https://corsearch.com/brand-protection-solutions",
+          "type": "neutral"
+        },
+        {
+          "label": "Smart Rules and Activity Log for Brand Impersonation Protection",
+          "url": "https://www.marqvision.com/blog/smart-rules-activity-log-brand-impersonation",
+          "type": "neutral"
+        }
+      ],
+      "stages": [
+        "BOFU"
       ],
       "priority": 5
     }
@@ -1557,32 +1606,32 @@
   "citation_sources": {
     "bofu_ca": {
       "label": "BOFU category-aware",
-      "subtitle": "Red Points leads 87%",
+      "subtitle": "Red Points leads 84%",
       "stage": "ca",
       "sources": [
         {
           "rank": 1,
-          "title": "10 Best Brand Protection Tools Reviewed (2026 Updated List)",
-          "url": "https://www.marqvision.com/blog/brand-protection-tools",
-          "domain": "marqvision.com"
-        },
-        {
-          "rank": 2,
-          "title": "6 Best Brand Protection Platforms for 2026: Safeguard Your Online Reputation",
-          "url": "https://www.netcraft.com/blog/6-best-brand-protection-platforms-for-defending-your-company-s-online-reputation",
-          "domain": "netcraft.com"
-        },
-        {
-          "rank": 3,
           "title": "Best Brand Protection Software Reviews 2026 | Gartner Peer Insights",
           "url": "https://www.gartner.com/reviews/market/brand-protection-software",
           "domain": "gartner.com"
         },
         {
+          "rank": 2,
+          "title": "Brand Protection Software | ZeroFox",
+          "url": "https://www.zerofox.com/solutions/protection/brand-protection",
+          "domain": "zerofox.com"
+        },
+        {
+          "rank": 3,
+          "title": "Best Brand Protection Software for Pharma July 2026",
+          "url": "https://www.marqvision.com/blog/pharmaceutical-brand-protection-software",
+          "domain": "marqvision.com"
+        },
+        {
           "rank": 4,
-          "title": "9 best brand protection software for 2026 - Guideflow Blog",
-          "url": "https://www.guideflow.com/blog/brand-protection-software",
-          "domain": "guideflow.com"
+          "title": "10 Best Brand Protection Tools Reviewed (2026 Updated List)",
+          "url": "https://www.marqvision.com/blog/brand-protection-tools",
+          "domain": "marqvision.com"
         }
       ]
     },
@@ -1593,27 +1642,27 @@
       "sources": [
         {
           "rank": 1,
-          "title": "Red Points Reviews 2026: Details, Pricing, & Features | G2",
+          "title": "Red Points Reviews 2026: Details, Pricing, & Features - G2",
           "url": "https://www.g2.com/products/red-points/reviews",
           "domain": "g2.com"
         },
         {
           "rank": 2,
-          "title": "Red Points Review: Pros, Cons, Features & Pricing",
-          "url": "https://thecmo.com/tools/red-points-review",
-          "domain": "thecmo.com"
-        },
-        {
-          "rank": 3,
-          "title": "Brand Protection Software Comparison [2026] - Axencis",
+          "title": "Brand Protection Software Comparison [2026] | Axencis",
           "url": "https://axencis.com/blog/brand-protection-software-comparison",
           "domain": "axencis.com"
         },
         {
+          "rank": 3,
+          "title": "Red Points Reviews & Ratings 2026 | Gartner Peer Insights",
+          "url": "https://www.gartner.com/reviews/product/red-points",
+          "domain": "gartner.com"
+        },
+        {
           "rank": 4,
-          "title": "Red Points review: pricing and fit | Knockoff",
-          "url": "https://knockoff.co/guides/red-points-review",
-          "domain": "knockoff.co"
+          "title": "Pricing - Red Points",
+          "url": "https://www.redpoints.com/pricing",
+          "domain": "redpoints.com"
         }
       ]
     },
@@ -1624,27 +1673,27 @@
       "sources": [
         {
           "rank": 1,
-          "title": "Best Brand Protection Software Reviews 2026 | Gartner Peer Insights",
-          "url": "https://www.gartner.com/reviews/market/brand-protection-software",
-          "domain": "gartner.com"
+          "title": "Top Brand Protection Software in 2026",
+          "url": "https://podqi.com/blog/top-brand-protection-software-ranked",
+          "domain": "podqi.com"
         },
         {
           "rank": 2,
-          "title": "Brand Protection Software Comparison [2026] - Axencis",
+          "title": "10 Best Brand Protection Tools Reviewed (2026 Updated List)",
+          "url": "https://www.marqvision.com/blog/brand-protection-tools",
+          "domain": "marqvision.com"
+        },
+        {
+          "rank": 3,
+          "title": "Brand Protection Software Comparison [2026] | Axencis",
           "url": "https://axencis.com/blog/brand-protection-software-comparison",
           "domain": "axencis.com"
         },
         {
-          "rank": 3,
-          "title": "Brand Protection Software Comparison: Which Tools Actually Help ...",
-          "url": "https://www.remove.tech/brand-blog/brand-protection-software-comparison-which-tools-actually-help-with-takedowns",
-          "domain": "remove.tech"
-        },
-        {
           "rank": 4,
-          "title": "10 Best Brand Protection Tools Reviewed (2026 Updated List)",
-          "url": "https://www.marqvision.com/blog/brand-protection-tools",
-          "domain": "marqvision.com"
+          "title": "Best Brand Protection Software Reviews 2026 | Gartner Peer Insights",
+          "url": "https://www.gartner.com/reviews/market/brand-protection-software",
+          "domain": "gartner.com"
         }
       ]
     },
@@ -1655,27 +1704,27 @@
       "sources": [
         {
           "rank": 1,
-          "title": "Temu IP Infringement Reporting Guide: August 2026 - MarqVision",
+          "title": "The complete guide to Amazon brand protection in 2026",
+          "url": "https://www.redpoints.com/blog/remove-counterfeit-amazon",
+          "domain": "redpoints.com"
+        },
+        {
+          "rank": 2,
+          "title": "Temu IP Violation Reporting Guide | August 2026 - MarqVision",
           "url": "https://www.marqvision.com/blog/how-to-report-fake-products-on-temu",
           "domain": "marqvision.com"
         },
         {
-          "rank": 2,
-          "title": "How to Report Counterfeit Products on Amazon: Guide",
-          "url": "https://www.brandalignment.com/report-counterfeit-products-on-amazon",
-          "domain": "brandalignment.com"
-        },
-        {
           "rank": 3,
-          "title": "How to protect your brand on Amazon from unauthorized sellers",
-          "url": "https://blog.acadia.io/blog/protect-your-brand-on-amazon",
-          "domain": "acadia.io"
+          "title": "Blog | How to Respond to Unauthorized Sellers on Amazon - June 2026",
+          "url": "https://www.marqvision.com/blog/unauthorized-sellers-amazon",
+          "domain": "marqvision.com"
         },
         {
           "rank": 4,
-          "title": "Phishing attempts using our Facebook brand, how do you deal with it?",
-          "url": "https://www.reddit.com/r/facebook/comments/1n9w3x7/phishing_attempts_using_our_facebook_brand_how_do",
-          "domain": "reddit.com"
+          "title": "Taobao Counterfeit Risk: The 2025 Full Guide - Axencis",
+          "url": "https://axencis.com/blog/taobao-counterfeit-risk-the-2025-full-guide",
+          "domain": "axencis.com"
         }
       ]
     }
@@ -1708,12 +1757,12 @@
       {
         "text": "How do brand protection platforms handle enforcement across Alibaba and Chinese marketplaces?",
         "stage": "MOFU",
-        "rp_rank": 1,
+        "rp_rank": 3,
         "top_mentions": [
           {
-            "name": "Red Points",
-            "visibility": 50,
-            "owned": true
+            "name": "MarqVision",
+            "visibility": 75,
+            "owned": false
           },
           {
             "name": "Alibaba",
@@ -1721,9 +1770,9 @@
             "owned": false
           },
           {
-            "name": "MarqVision",
-            "visibility": 50,
-            "owned": false
+            "name": "Red Points",
+            "visibility": 25,
+            "owned": true
           }
         ]
       },
@@ -1752,12 +1801,22 @@
       {
         "text": "we're responsible for protecting trademarks globally and it's overwhelming",
         "stage": "MOFU",
-        "rp_rank": 1,
+        "rp_rank": 2,
         "top_mentions": [
           {
+            "name": "Corsearch",
+            "visibility": 100,
+            "owned": false
+          },
+          {
             "name": "Red Points",
-            "visibility": 0,
+            "visibility": 50,
             "owned": true
+          },
+          {
+            "name": "Clarivate",
+            "visibility": 50,
+            "owned": false
           }
         ]
       },
@@ -1767,11 +1826,6 @@
         "rp_rank": null,
         "top_mentions": [
           {
-            "name": "Alibaba",
-            "visibility": 100,
-            "owned": false
-          },
-          {
             "name": "Taobao",
             "visibility": 100,
             "owned": false
@@ -1779,6 +1833,11 @@
           {
             "name": "Tmall",
             "visibility": 100,
+            "owned": false
+          },
+          {
+            "name": "1688",
+            "visibility": 67,
             "owned": false
           }
         ]
@@ -1795,11 +1854,11 @@
           },
           {
             "name": "AliExpress",
-            "visibility": 25,
+            "visibility": 50,
             "owned": false
           },
           {
-            "name": "Amazon",
+            "name": "1688",
             "visibility": 25,
             "owned": false
           }
@@ -1816,12 +1875,12 @@
             "owned": true
           },
           {
-            "name": "MarqVision",
-            "visibility": 100,
+            "name": "Corsearch",
+            "visibility": 75,
             "owned": false
           },
           {
-            "name": "Corsearch",
+            "name": "MarqVision",
             "visibility": 75,
             "owned": false
           }
@@ -1839,7 +1898,7 @@
           },
           {
             "name": "Corsearch",
-            "visibility": 100,
+            "visibility": 75,
             "owned": false
           },
           {
@@ -1854,22 +1913,22 @@
       {
         "text": "How does AI improve brand protection compared to manual monitoring?",
         "stage": "MOFU",
-        "rp_rank": 4,
+        "rp_rank": 3,
         "top_mentions": [
           {
-            "name": "Akamai",
+            "name": "MarqVision",
             "visibility": 100,
             "owned": false
           },
           {
-            "name": "Markify",
+            "name": "ZeroFox",
             "visibility": 100,
             "owned": false
           },
           {
-            "name": "Questel",
-            "visibility": 100,
-            "owned": false
+            "name": "Red Points",
+            "visibility": 0,
+            "owned": true
           }
         ]
       },
@@ -1880,7 +1939,7 @@
         "top_mentions": [
           {
             "name": "Red Points",
-            "visibility": 100,
+            "visibility": 75,
             "owned": true
           },
           {
@@ -1898,21 +1957,21 @@
       {
         "text": "I manage our brand protection team and our takedown success rate KPI is failing every month",
         "stage": "MOFU",
-        "rp_rank": 5,
+        "rp_rank": null,
         "top_mentions": [
           {
             "name": "Amazon",
-            "visibility": 67,
+            "visibility": 100,
             "owned": false
           },
           {
             "name": "Alibaba",
-            "visibility": 33,
+            "visibility": 50,
             "owned": false
           },
           {
-            "name": "BrandShield",
-            "visibility": 33,
+            "name": "Bolster",
+            "visibility": 50,
             "owned": false
           }
         ]
@@ -1924,17 +1983,17 @@
         "top_mentions": [
           {
             "name": "Red Points",
-            "visibility": 67,
+            "visibility": 100,
             "owned": true
           },
           {
-            "name": "DMCA.com",
+            "name": "BrandShield",
             "visibility": 67,
             "owned": false
           },
           {
-            "name": "AliExpress",
-            "visibility": 33,
+            "name": "Corsearch",
+            "visibility": 67,
             "owned": false
           }
         ]
@@ -1942,17 +2001,17 @@
       {
         "text": "our only brand protection person just left and we realized our entire process lived in a spreadsheet",
         "stage": "MOFU",
-        "rp_rank": 2,
+        "rp_rank": 1,
         "top_mentions": [
           {
-            "name": "MarkMonitor",
+            "name": "Red Points",
             "visibility": 100,
-            "owned": false
+            "owned": true
           },
           {
-            "name": "Red Points",
-            "visibility": 67,
-            "owned": true
+            "name": "Corsearch",
+            "visibility": 100,
+            "owned": false
           },
           {
             "name": "Alibaba",
@@ -1973,11 +2032,11 @@
           },
           {
             "name": "BrandShield",
-            "visibility": 75,
+            "visibility": 50,
             "owned": false
           },
           {
-            "name": "Corsearch",
+            "name": "MarqVision",
             "visibility": 50,
             "owned": false
           }
@@ -1990,7 +2049,7 @@
         "top_mentions": [
           {
             "name": "Red Points",
-            "visibility": 100,
+            "visibility": 75,
             "owned": true
           },
           {
@@ -2008,20 +2067,20 @@
       {
         "text": "We can't keep up with counterfeits manually \u2014 what does a fully managed service do?",
         "stage": "MOFU",
-        "rp_rank": 4,
+        "rp_rank": 5,
         "top_mentions": [
+          {
+            "name": "Alibaba",
+            "visibility": 50,
+            "owned": false
+          },
           {
             "name": "Amazon",
             "visibility": 50,
             "owned": false
           },
           {
-            "name": "BrandProtection.ai",
-            "visibility": 50,
-            "owned": false
-          },
-          {
-            "name": "VantageBP",
+            "name": "eBay",
             "visibility": 50,
             "owned": false
           }
@@ -2034,17 +2093,17 @@
         "top_mentions": [
           {
             "name": "Red Points",
-            "visibility": 100,
+            "visibility": 50,
             "owned": true
           },
           {
-            "name": "Corsearch",
-            "visibility": 100,
+            "name": "Amazon",
+            "visibility": 50,
             "owned": false
           },
           {
-            "name": "ZeroFox",
-            "visibility": 100,
+            "name": "Corsearch",
+            "visibility": 50,
             "owned": false
           }
         ]
@@ -2052,21 +2111,21 @@
       {
         "text": "we track infringement cases in spreadsheets and it's completely unmanageable",
         "stage": "MOFU",
-        "rp_rank": 1,
+        "rp_rank": 2,
         "top_mentions": [
           {
-            "name": "Red Points",
-            "visibility": 67,
-            "owned": true
-          },
-          {
             "name": "Corsearch",
-            "visibility": 67,
+            "visibility": 75,
             "owned": false
           },
           {
+            "name": "Red Points",
+            "visibility": 50,
+            "owned": true
+          },
+          {
             "name": "Airtable",
-            "visibility": 33,
+            "visibility": 50,
             "owned": false
           }
         ]
@@ -2074,7 +2133,7 @@
       {
         "text": "How do I stop counterfeits from reappearing every time I file a takedown?",
         "stage": "MOFU",
-        "rp_rank": 3,
+        "rp_rank": 5,
         "top_mentions": [
           {
             "name": "Amazon",
@@ -2083,13 +2142,13 @@
           },
           {
             "name": "eBay",
-            "visibility": 75,
+            "visibility": 100,
             "owned": false
           },
           {
-            "name": "Red Points",
-            "visibility": 50,
-            "owned": true
+            "name": "Alibaba",
+            "visibility": 75,
+            "owned": false
           }
         ]
       },
@@ -2132,6 +2191,50 @@
       {
         "text": "What are the best solutions for combating product diversion and parallel trade?",
         "stage": "MOFU",
+        "rp_rank": null,
+        "top_mentions": [
+          {
+            "name": "Acviss",
+            "visibility": 100,
+            "owned": false
+          },
+          {
+            "name": "Inexto",
+            "visibility": 100,
+            "owned": false
+          },
+          {
+            "name": "JohnsByrne",
+            "visibility": 100,
+            "owned": false
+          }
+        ]
+      },
+      {
+        "text": "our MAP compliance is at 60% and dropping \u2014 I need to fix this before our quarterly board review",
+        "stage": "MOFU",
+        "rp_rank": null,
+        "top_mentions": [
+          {
+            "name": "Amazon",
+            "visibility": 75,
+            "owned": false
+          },
+          {
+            "name": "Brand Alignment",
+            "visibility": 25,
+            "owned": false
+          },
+          {
+            "name": "Feedvisor",
+            "visibility": 25,
+            "owned": false
+          }
+        ]
+      },
+      {
+        "text": "I'm responsible for marketplace revenue and unauthorized sellers are eroding our margins every quarter",
+        "stage": "MOFU",
         "rp_rank": 3,
         "top_mentions": [
           {
@@ -2140,41 +2243,19 @@
             "owned": false
           },
           {
-            "name": "eBay",
+            "name": "Walmart",
             "visibility": 100,
             "owned": false
           },
           {
             "name": "Red Points",
-            "visibility": 0,
+            "visibility": 67,
             "owned": true
           }
         ]
       },
       {
-        "text": "our MAP compliance is at 60% and dropping \u2014 I need to fix this before our quarterly board review",
-        "stage": "MOFU",
-        "rp_rank": 1,
-        "top_mentions": [
-          {
-            "name": "Red Points",
-            "visibility": 33,
-            "owned": true
-          },
-          {
-            "name": "Amazon",
-            "visibility": 33,
-            "owned": false
-          },
-          {
-            "name": "Brand Alignment",
-            "visibility": 33,
-            "owned": false
-          }
-        ]
-      },
-      {
-        "text": "I'm responsible for marketplace revenue and unauthorized sellers are eroding our margins every quarter",
+        "text": "i want full control over who sells our products online",
         "stage": "MOFU",
         "rp_rank": 4,
         "top_mentions": [
@@ -2190,29 +2271,7 @@
           },
           {
             "name": "Walmart",
-            "visibility": 67,
-            "owned": false
-          }
-        ]
-      },
-      {
-        "text": "i want full control over who sells our products online",
-        "stage": "MOFU",
-        "rp_rank": 1,
-        "top_mentions": [
-          {
-            "name": "Red Points",
-            "visibility": 100,
-            "owned": true
-          },
-          {
-            "name": "Amazon",
-            "visibility": 100,
-            "owned": false
-          },
-          {
-            "name": "BrandVerity",
-            "visibility": 100,
+            "visibility": 50,
             "owned": false
           }
         ]
@@ -2224,17 +2283,17 @@
         "top_mentions": [
           {
             "name": "Amazon",
-            "visibility": 67,
+            "visibility": 75,
             "owned": false
           },
           {
             "name": "eBay",
-            "visibility": 67,
+            "visibility": 75,
             "owned": false
           },
           {
             "name": "Walmart",
-            "visibility": 67,
+            "visibility": 50,
             "owned": false
           }
         ]
@@ -2242,7 +2301,7 @@
       {
         "text": "we expanded distribution and lost control of who's selling online",
         "stage": "TOFU",
-        "rp_rank": 5,
+        "rp_rank": 4,
         "top_mentions": [
           {
             "name": "Amazon",
@@ -2250,13 +2309,13 @@
             "owned": false
           },
           {
-            "name": "eBay",
-            "visibility": 50,
+            "name": "Walmart",
+            "visibility": 100,
             "owned": false
           },
           {
-            "name": "Walmart",
-            "visibility": 50,
+            "name": "eBay",
+            "visibility": 67,
             "owned": false
           }
         ]
@@ -2264,11 +2323,16 @@
       {
         "text": "we just launched on amazon and unauthorized sellers showed up immediately",
         "stage": "TOFU",
-        "rp_rank": 2,
+        "rp_rank": 3,
         "top_mentions": [
           {
             "name": "Amazon",
             "visibility": 100,
+            "owned": false
+          },
+          {
+            "name": "Google",
+            "visibility": 25,
             "owned": false
           },
           {
@@ -2281,7 +2345,7 @@
       {
         "text": "unauthorized sellers keep listing our products on amazon without approval",
         "stage": "TOFU",
-        "rp_rank": 3,
+        "rp_rank": 4,
         "top_mentions": [
           {
             "name": "Amazon",
@@ -2289,21 +2353,21 @@
             "owned": false
           },
           {
-            "name": "Keepa",
+            "name": "Jungle Scout",
             "visibility": 25,
             "owned": false
           },
           {
-            "name": "Red Points",
-            "visibility": 0,
-            "owned": true
+            "name": "Reddit",
+            "visibility": 25,
+            "owned": false
           }
         ]
       },
       {
         "text": "Unauthorized resellers are selling my products online without my permission",
         "stage": "TOFU",
-        "rp_rank": 5,
+        "rp_rank": null,
         "top_mentions": [
           {
             "name": "Amazon",
@@ -2312,12 +2376,12 @@
           },
           {
             "name": "eBay",
-            "visibility": 75,
+            "visibility": 67,
             "owned": false
           },
           {
-            "name": "Walmart",
-            "visibility": 75,
+            "name": "Shopify",
+            "visibility": 67,
             "owned": false
           }
         ]
@@ -2333,13 +2397,13 @@
             "owned": true
           },
           {
-            "name": "Corsearch",
-            "visibility": 100,
+            "name": "BrandShield",
+            "visibility": 75,
             "owned": false
           },
           {
-            "name": "BrandShield",
-            "visibility": 75,
+            "name": "Amazon",
+            "visibility": 50,
             "owned": false
           }
         ]
@@ -2355,12 +2419,12 @@
             "owned": true
           },
           {
-            "name": "BrandShield",
-            "visibility": 50,
+            "name": "Corsearch",
+            "visibility": 100,
             "owned": false
           },
           {
-            "name": "Corsearch",
+            "name": "BrandShield",
             "visibility": 50,
             "owned": false
           }
@@ -2383,13 +2447,8 @@
       {
         "text": "Which tools help brands enforce IP rights on TikTok and TikTok Shop?",
         "stage": "MOFU",
-        "rp_rank": 3,
+        "rp_rank": 2,
         "top_mentions": [
-          {
-            "name": "MarqVision",
-            "visibility": 100,
-            "owned": false
-          },
           {
             "name": "TikTok",
             "visibility": 100,
@@ -2399,6 +2458,11 @@
             "name": "Red Points",
             "visibility": 50,
             "owned": true
+          },
+          {
+            "name": "Corsearch",
+            "visibility": 50,
+            "owned": false
           }
         ]
       },
@@ -2418,7 +2482,7 @@
             "owned": false
           },
           {
-            "name": "Corsearch",
+            "name": "MarqVision",
             "visibility": 100,
             "owned": false
           }
@@ -2427,7 +2491,7 @@
       {
         "text": "I'm responsible for Amazon revenue and counterfeit listings are tanking our Buy Box percentage",
         "stage": "MOFU",
-        "rp_rank": 4,
+        "rp_rank": 2,
         "top_mentions": [
           {
             "name": "Amazon",
@@ -2435,14 +2499,9 @@
             "owned": false
           },
           {
-            "name": "Jarvio",
-            "visibility": 25,
-            "owned": false
-          },
-          {
-            "name": "Megaficus",
-            "visibility": 25,
-            "owned": false
+            "name": "Red Points",
+            "visibility": 0,
+            "owned": true
           }
         ]
       },
@@ -2458,7 +2517,7 @@
           },
           {
             "name": "BrandShield",
-            "visibility": 100,
+            "visibility": 75,
             "owned": false
           },
           {
@@ -2471,21 +2530,21 @@
       {
         "text": "Can brand protection software alert me before counterfeits start appearing on marketplaces?",
         "stage": "MOFU",
-        "rp_rank": 1,
+        "rp_rank": 2,
         "top_mentions": [
           {
+            "name": "BrandShield",
+            "visibility": 50,
+            "owned": false
+          },
+          {
             "name": "Red Points",
-            "visibility": 67,
+            "visibility": 25,
             "owned": true
           },
           {
             "name": "Amazon",
-            "visibility": 67,
-            "owned": false
-          },
-          {
-            "name": "Bitsight",
-            "visibility": 33,
+            "visibility": 25,
             "owned": false
           }
         ]
@@ -2496,18 +2555,18 @@
         "rp_rank": 2,
         "top_mentions": [
           {
-            "name": "Amazon",
-            "visibility": 50,
+            "name": "Counterfake",
+            "visibility": 100,
             "owned": false
           },
           {
             "name": "Red Points",
-            "visibility": 25,
+            "visibility": 50,
             "owned": true
           },
           {
-            "name": "Authentix",
-            "visibility": 25,
+            "name": "AlpVision",
+            "visibility": 50,
             "owned": false
           }
         ]
@@ -2515,8 +2574,57 @@
       {
         "text": "we find fake listings weeks after they go live on marketplaces",
         "stage": "MOFU",
-        "rp_rank": 3,
+        "rp_rank": 2,
         "top_mentions": [
+          {
+            "name": "Amazon",
+            "visibility": 100,
+            "owned": false
+          },
+          {
+            "name": "Red Points",
+            "visibility": 50,
+            "owned": true
+          },
+          {
+            "name": "BrandShield",
+            "visibility": 50,
+            "owned": false
+          }
+        ]
+      },
+      {
+        "text": "counterfeit listings keep popping up on amazon faster than we remove them",
+        "stage": "MOFU",
+        "rp_rank": 4,
+        "top_mentions": [
+          {
+            "name": "Amazon",
+            "visibility": 100,
+            "owned": false
+          },
+          {
+            "name": "MarqVision",
+            "visibility": 50,
+            "owned": false
+          },
+          {
+            "name": "Seller Labs",
+            "visibility": 25,
+            "owned": false
+          }
+        ]
+      },
+      {
+        "text": "a customer just sent us a photo of a fake version of our product they bought online",
+        "stage": "TOFU",
+        "rp_rank": 5,
+        "top_mentions": [
+          {
+            "name": "Alibaba",
+            "visibility": 100,
+            "owned": false
+          },
           {
             "name": "Amazon",
             "visibility": 100,
@@ -2526,17 +2634,12 @@
             "name": "eBay",
             "visibility": 100,
             "owned": false
-          },
-          {
-            "name": "Red Points",
-            "visibility": 0,
-            "owned": true
           }
         ]
       },
       {
-        "text": "counterfeit listings keep popping up on amazon faster than we remove them",
-        "stage": "MOFU",
+        "text": "counterfeit sales spiked after we launched on amazon",
+        "stage": "TOFU",
         "rp_rank": 2,
         "top_mentions": [
           {
@@ -2548,50 +2651,6 @@
             "name": "Red Points",
             "visibility": 0,
             "owned": true
-          }
-        ]
-      },
-      {
-        "text": "a customer just sent us a photo of a fake version of our product they bought online",
-        "stage": "TOFU",
-        "rp_rank": null,
-        "top_mentions": [
-          {
-            "name": "Amazon",
-            "visibility": 100,
-            "owned": false
-          },
-          {
-            "name": "eBay",
-            "visibility": 100,
-            "owned": false
-          },
-          {
-            "name": "Walmart",
-            "visibility": 67,
-            "owned": false
-          }
-        ]
-      },
-      {
-        "text": "counterfeit sales spiked after we launched on amazon",
-        "stage": "TOFU",
-        "rp_rank": null,
-        "top_mentions": [
-          {
-            "name": "Amazon",
-            "visibility": 100,
-            "owned": false
-          },
-          {
-            "name": "Axencis",
-            "visibility": 25,
-            "owned": false
-          },
-          {
-            "name": "Corsearch",
-            "visibility": 25,
-            "owned": false
           }
         ]
       },
@@ -2612,7 +2671,7 @@
           },
           {
             "name": "Temu",
-            "visibility": 100,
+            "visibility": 50,
             "owned": false
           }
         ]
@@ -2652,17 +2711,17 @@
         "rp_rank": null,
         "top_mentions": [
           {
-            "name": "Amazon",
-            "visibility": 50,
-            "owned": false
-          },
-          {
             "name": "Authentix",
             "visibility": 50,
             "owned": false
           },
           {
-            "name": "Kilburn & Strode LLP",
+            "name": "Avery Dennison",
+            "visibility": 50,
+            "owned": false
+          },
+          {
+            "name": "HID Global",
             "visibility": 50,
             "owned": false
           }
@@ -2683,22 +2742,22 @@
       {
         "text": "What anti-counterfeiting solutions work best for beauty products?",
         "stage": "MOFU",
-        "rp_rank": null,
+        "rp_rank": 3,
         "top_mentions": [
           {
-            "name": "Chekkit",
-            "visibility": 33,
+            "name": "Cypheme",
+            "visibility": 100,
             "owned": false
           },
           {
-            "name": "Ennoventure",
-            "visibility": 33,
+            "name": "Systech",
+            "visibility": 100,
             "owned": false
           },
           {
-            "name": "ForgeStop",
-            "visibility": 33,
-            "owned": false
+            "name": "Red Points",
+            "visibility": 0,
+            "owned": true
           }
         ]
       }
@@ -2707,21 +2766,21 @@
       {
         "text": "I manage our brand reputation and fake social accounts are tanking our sentiment scores",
         "stage": "MOFU",
-        "rp_rank": 1,
+        "rp_rank": null,
         "top_mentions": [
           {
-            "name": "Red Points",
-            "visibility": 67,
-            "owned": true
+            "name": "Meta",
+            "visibility": 100,
+            "owned": false
           },
           {
             "name": "BrandShield",
-            "visibility": 33,
+            "visibility": 67,
             "owned": false
           },
           {
             "name": "Brandwatch",
-            "visibility": 33,
+            "visibility": 67,
             "owned": false
           }
         ]
@@ -2732,12 +2791,12 @@
         "rp_rank": 3,
         "top_mentions": [
           {
-            "name": "Alibaba",
+            "name": "Amazon",
             "visibility": 100,
             "owned": false
           },
           {
-            "name": "Amazon",
+            "name": "Reed Smith",
             "visibility": 100,
             "owned": false
           },
@@ -2760,7 +2819,7 @@
           },
           {
             "name": "Google",
-            "visibility": 25,
+            "visibility": 33,
             "owned": false
           },
           {
@@ -2785,20 +2844,20 @@
       {
         "text": "There are fake ads on Facebook using my brand to scam my customers",
         "stage": "TOFU",
-        "rp_rank": 5,
+        "rp_rank": 2,
         "top_mentions": [
           {
             "name": "Meta Platforms",
-            "visibility": 100,
+            "visibility": 67,
             "owned": false
           },
           {
-            "name": "Netcraft",
+            "name": "Red Points",
             "visibility": 33,
-            "owned": false
+            "owned": true
           },
           {
-            "name": "Spikerz",
+            "name": "Facebook",
             "visibility": 33,
             "owned": false
           }
@@ -2807,22 +2866,12 @@
       {
         "text": "Someone created a fake social media page using my brand name and logo \u2014 what can I do?",
         "stage": "TOFU",
-        "rp_rank": null,
+        "rp_rank": 1,
         "top_mentions": [
           {
-            "name": "Facebook",
-            "visibility": 100,
-            "owned": false
-          },
-          {
-            "name": "Instagram",
-            "visibility": 100,
-            "owned": false
-          },
-          {
-            "name": "LinkedIn",
-            "visibility": 100,
-            "owned": false
+            "name": "Red Points",
+            "visibility": 0,
+            "owned": true
           }
         ]
       },
@@ -2833,16 +2882,16 @@
         "top_mentions": [
           {
             "name": "Red Points",
-            "visibility": 100,
+            "visibility": 75,
             "owned": true
           },
           {
-            "name": "Netcraft",
-            "visibility": 100,
+            "name": "BrandShield",
+            "visibility": 75,
             "owned": false
           },
           {
-            "name": "Allure Security",
+            "name": "Corsearch",
             "visibility": 75,
             "owned": false
           }
